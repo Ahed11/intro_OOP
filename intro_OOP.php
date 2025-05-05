@@ -41,13 +41,15 @@ class Book {
 class User {
 
     public $name;
-    public $books = [];
+    public $borrowedBooks = [];
 
+        
 }
 
 class Library {
     
     private $books = [];
+    private $users = [];
     
     public function addBook(Book $book){
         $this->books[] = $book;
