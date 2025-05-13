@@ -1,5 +1,5 @@
 <?php
-#Для запуска ввести в трминале "С:\xampp\htdocs\intro_OOP.php"
+#Для запуска ввести в трминале "C:\xampp\htdocs\intro_OOP.php"
 declare(strict_types=1);
 
 abstract class PrintedMaterial {
@@ -129,14 +129,14 @@ while(true){
         break;
     }
 
-    $authorOfBook = readline("Введите автора");
-    $year = (int)readline("Введите год издания");
+    $authorOfBook = readline("Введите автора: ");
+    $year = (int)readline("Введите год издания: ");
 
     $nBook = new Book($titleOfBook, $authorOfBook, $year);
     $library->addBook($nBook);
 }
 
-echo "Давайте теперь зарегистрируем пользователей";
+echo "Давайте теперь зарегистрируем пользователей\n\n";
 
 while(true){
     $nameOfUser = readline("Введите имя пользователя (или \"стоп\" для завершения): ");
